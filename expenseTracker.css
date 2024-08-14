@@ -22,12 +22,14 @@ header {
 h1 {
   margin: 0;
   margin-bottom: 1.4%;
+  padding: 3%;
 }
 
 main {
-  padding: 3%;
+  padding: 8%;
   background-color: #B692C2;
   display: flex;
+  flex-direction: column;
   column-gap: 2%;
   border-radius: 3%;
 }
@@ -40,9 +42,15 @@ section {
   height: fit-content;
 }
 
+.mob {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 form {
   margin-bottom: 1rem;
   display: flex;
+  margin-left: 5%;
   flex-direction: column;
   justify-content: center;
   margin-top: 3%;
@@ -52,12 +60,13 @@ label {
   display: block;
   margin-bottom: 0.5rem;
 }
-h2{
+
+h2 {
   margin-bottom: 3%;
 }
+
 input {
   width: 90%;
-  height: 5%;
   padding: 0.5rem;
   background-color: #ffffff;
   border: 1px solid #ccc;
@@ -67,12 +76,13 @@ input {
 input:focus {
   outline: none;
 }
-.expense-form{
+
+.expense-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: cente;
-
+  margin-bottom: 5%;
+  margin-top: 3%;
 }
 
 button {
@@ -130,12 +140,13 @@ h3 {
 
 .delete-btn {
   color: #ff0000;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .delete-btn:hover {
   color: #b30000;
 }
+
 .edit-btn {
   color: #694F8E;
   text-decoration: none;
@@ -144,14 +155,38 @@ h3 {
 .edit-btn:hover {
   color: #32293f;
 }
-.amount{
-  background-color: #fff;
+
+.amount {
   border-radius: 5%;
 }
-.amount p{
-padding: 4%;
-text-align: center;
-color: #694F8E;
-margin-top: 3%;
-font-weight: 700;
+
+.amount p {
+  padding: 2%;
+  text-align: center;
+  color: #694F8E;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.expense-form h2 {
+  margin-left: 5%;
+}
+
+@media (min-width: 992px) {
+main{
+  flex-direction: row;
+  padding: 3%;
+}
+body{
+  padding: 1% 5%;
+}
+.mob{
+  flex-direction: column;
+}
+h1{
+  padding: 0%;
+}
+.amount p {
+  font-size: 20px;
+}
 }
