@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 1.5% 8%;
+  height: 100vh;
+  background-color: #694F8E;
+  color: #694F8E;
+
+}
+
+header {
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 1.4%;
+}
+
+main {
+  padding: 3%;
+  background-color: #B692C2;
+  display: flex;
+  column-gap: 2%;
+  border-radius: 3%;
+}
+
+section {
+  flex: 1;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 3%;
+  height: fit-content;
+}
+
+form {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+h2{
+  margin-bottom: 3%;
+}
+input {
+  width: 90%;
+  height: 5%;
+  padding: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+.expense-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: cente;
+
+}
+
+button {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: #694F8E;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  height: 60vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #694F8E #ffffff;
+}
+
+li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.actions a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+
+
+.delete-btn {
+  color: #ff0000;
+  text-decoration: none; 
+}
+
+.delete-btn:hover {
+  color: #b30000;
+}
+.edit-btn {
+  color: #694F8E;
+  text-decoration: none;
+}
+
+.edit-btn:hover {
+  color: #32293f;
+}
+.amount{
+  background-color: #fff;
+  border-radius: 5%;
+}
+.amount p{
+padding: 4%;
+text-align: center;
+color: #694F8E;
+margin-top: 3%;
+font-weight: 700;
+}
