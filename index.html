@@ -19,7 +19,7 @@
     <div class="mob">
       <section class="expense-form">
         <h2>Add Expense</h2>
-        <form>
+        <form id="expenseForm">
           <div>
             <label for="expense-name">Expense Name:</label>
             <input type="text" id="expense-name" name="expense-name" required>
@@ -34,67 +34,22 @@
             <label for="expense-date">Expense Date:</label>
             <input type="date" id="expense-date" name="expense-date">
           </div>
-          <button type="submit">Add Expense</button>
+          <button type="submit" id="submit">Add Expense</button>
         </form>
       </section>
       <div class="amount">
-        <p>Budjet: Le 3000</p>
-        <p>Expense: Le 3000</p>
+        <p id="output"></p>
       </div>
 
     </div>
 
     <section class="expense-list">
       <h2>Expense List</h2>
-      <ul>
-        <li>
-          <h3>Groceries</h3>
-          <p>Amount: $50.00</p>
-          <p>Date: 2023-08-01</p>
-          <div class="actions">
-            <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-            <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        <li>
-          <h3>Electricity Bill</h3>
-          <p>Amount: $75.00</p>
-          <p>Date: 2023-07-15</p>
-          <div class="actions">
-            <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-            <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        <li>
-          <h3>Internet Service</h3>
-          <p>Amount: $45.00</p>
-          <p>Date: 2023-08-05</p>
-          <div class="actions">
-            <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-            <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        <li>
-          <h3>Internet Service</h3>
-          <p>Amount: $45.00</p>
-          <p>Date: 2023-08-05</p>
-          <div class="actions">
-            <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-            <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
-        <li>
-          <h3>Internet Service</h3>
-          <p>Amount: $45.00</p>
-          <p>Date: 2023-08-05</p>
-          <div class="actions">
-            <a href="#" class="edit-btn"><i class="fas fa-edit"></i></a>
-            <a href="#" class="delete-btn"><i class="fas fa-trash"></i></a>
-          </div>
-        </li>
+      <ul id="expenses">
       </ul>
     </section>
   </main>
+  <script src="./expinsetracker.js"></script>
 </body>
 
 </html>
